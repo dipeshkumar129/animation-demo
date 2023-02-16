@@ -1,0 +1,797 @@
+<html>
+<head>
+<title>Event Demo</title>
+<style>
+
+ #t1{
+      margin-top:50px;
+      margin-left:100px;
+
+}
+    
+    .button {
+  background-color:red; 
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 16px;
+  margin: 4px 10px ;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color:black ;
+  border: 3px solid black ;
+  position: relative;
+  
+  
+  
+}
+
+
+
+
+   
+    .button2 {background-color:green;} 
+    .button3 {background-color:blue;} 
+    .button4 {background-color: cyan; } 
+    .button5 {background-color:orange;} 
+    .button6 {background-color:slateblue;}
+    .button8 {background-color:rgb(114, 6, 60);}
+    .button9 {background-color:rgb(245, 135, 9);}
+    
+
+
+
+
+
+
+.flower {
+
+  height: 200px;
+
+  width: 200px;
+
+  margin:20px auto;
+
+
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+
+
+  position: relative;
+
+}
+
+
+
+.mid {
+
+  width: 50px;
+
+  height: 50px;
+
+  border-radius: 50%;
+
+  
+
+  background: radial-gradient(circle, #000, #ff5e00, #000);
+
+
+
+  z-index: 4;
+
+
+
+  background-size: 5px 5px;
+
+
+
+  filter: drop-shadow(0 0 8px #682600);
+
+}
+
+
+
+.Petal1 {
+
+  position: absolute;
+
+  left: 40px;
+
+  z-index: 3;
+
+
+
+  width: 120px;
+
+  height: 30px;
+
+  border-radius: 50%;
+
+
+
+  background: radial-gradient(circle,#e05200,pink);
+
+
+
+  filter: drop-shadow(0 0 5px  #ff5e00);
+
+}
+
+
+
+.Petal1.p1 {
+
+  transform: rotate(22.5deg);
+
+}
+
+.Petal1.p2 {
+
+  transform: rotate(67.5deg);
+
+}
+
+.Petal1.p3 {
+
+  transform: rotate(110.5deg);
+
+}
+
+.Petal1.p4 {
+
+  transform: rotate(157.5deg);
+
+}
+
+
+
+.Petal2 {
+
+  position: absolute;
+
+  left: 0;
+
+  z-index: 2;
+
+
+
+  width: 200px;
+
+  height: 40px;
+
+  border-radius: 50%;
+
+
+
+  background: radial-gradient(circle, #ff5e00,yellow);
+
+
+
+  filter: drop-shadow(0 0 5px #ff5e00 );
+}
+
+
+
+.Petal2.p1 {
+transform: rotate(120deg);
+
+}
+
+
+
+.Petal2.p2 {
+
+  transform: rotate(90deg);
+
+}
+
+.Petal2.p3 {
+
+  transform: rotate(45deg);
+
+}
+
+#img{
+  margin-left: 175px;
+  margin-top:-70 ;
+}
+
+#img1{
+  margin-left:100px;
+  margin-top:-75 ;
+}
+
+
+#container {
+  width:500px;
+  height: 500px;
+  position: relative;
+  background:#000;
+  background-image:url("");
+}
+#animate {
+  width: 100px;
+  height:100px;
+  position: absolute;
+  background-color: red;
+  border-radius: 100px;
+  background-image:url("");
+  color:chartreuse;
+  }
+
+  #animate1 {
+  width: 100px;
+  height:100px;
+  position: absolute;
+  background-color:green;
+  border-radius: 100px;
+  color:khaki;
+  
+  }
+
+  #animate2 {
+  width: 100px;
+  height:100px;
+  position: absolute;
+  background-color:blue;
+  border-radius: 100px;
+  color:yellow;
+  
+  }
+
+
+
+#s{
+  color: #d1b61c;
+  font-size:25px ;
+}
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+  function f1()
+  {
+    //alert("hi..");
+    document.getElementById("h4").innerHTML="By: Dipesh Kumar ☺☺ ";
+    
+    setInterval(f2 ,2000);
+   // setTimeout(f2 ,8000);
+    
+  }
+
+function changeColor(c)
+{
+ document.getElementById("h1").style.color=c;
+ document.getElementById("h11").style.color=c;
+ //document.getElementById("h3").style.color=c;
+ setTimeout(f2 ,2000);
+ 
+
+}
+
+function f2()
+{
+  document.getElementById("h2").innerHTML="* Happy New Year *";
+ //document.getElementById("h1").style.color=c;
+// document.getElementById("h2").style.color=c;
+ //document.getElementById("h3").style.color=c;
+setTimeout(f3 ,4000);
+ 
+
+}
+
+function f3()
+{
+  document.getElementById("h3").innerHTML="* Happy Makar Sakranti *";
+ //document.getElementById("h1").style.color=c;
+ //document.getElementById("h2").style.color=c;
+ //document.getElementById("h3").style.color=c;
+ setTimeout(f1 ,6000);
+ //clearTimeout(3000);
+
+ 
+
+}
+const  a =setTimeout(f6 ,10000);
+function f6()
+{
+document.getElementById("h6").innerHTML="* ☺☺☺☺☺☺ *";
+}
+function f4()
+{
+  
+//alert("hi..")
+
+  clearTimeout(a);
+  //document.getElementById("h3").innerHTML="*Happy Makar Sakranti*";
+ //document.getElementById("h1").style.color=c;
+ //document.getElementById("h2").style.color=c;
+ //document.getElementById("h3").style.color=c;
+ //setTimeout(f1 ,6000);
+ 
+ 
+ 
+
+}
+
+
+function playSound () {
+	let ding = new Audio('ding.mp3');
+	ding.play();
+ b= setInterval(playSound1,13000);
+}
+
+
+function playSound1 () {
+	let ding = new Audio('ladder.mp3');
+	ding.play();
+  clearTimeout(b);
+
+}
+
+
+
+
+
+
+function myMove() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos ==350) {
+      playSound ();
+      playSound1 ();
+        myMove1();
+        myMove3();
+        myMove5();
+        clearInterval(id);
+    }
+
+    else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      pos;
+    }
+    
+  }
+}
+
+function myMove1() {
+  let id = null;
+  const elem = document.getElementById("animate");   
+  let pos = 350;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos ==0) {
+        clearInterval(id);
+        myMove();
+        
+      
+    }
+
+    
+    
+    
+    else {
+      pos--; 
+      elem.style.top = pos + "px"; 
+      elem.style.bottom = pos + "px";
+     
+      elem.style.right = pos + "px";
+       
+      
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+
+function myMove2() {
+  let id = null;
+  const elem = document.getElementById("animate1");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos ==350) {
+        clearInterval(id);
+        myMove3();
+      
+    }
+
+    else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.right = pos + "px"; 
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      pos;
+    }
+    
+  }
+}
+
+function myMove3() {
+  let id = null;
+  const elem = document.getElementById("animate1");   
+  let pos =350;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos ==0) {
+        clearInterval(id);
+        myMove2();
+        
+      
+    }
+
+    
+    
+    
+    else {
+      pos--; 
+      elem.style.top = pos + "px"; 
+      elem.style.bottom = pos + "px";
+     
+      
+       
+      
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      
+    }
+    
+  }
+}
+
+
+
+
+
+
+
+function myMove4() {
+  let id = null;
+  const elem = document.getElementById("animate2");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos ==350) {
+        clearInterval(id);
+        myMove5();
+      
+    }
+
+    else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.bottom = pos + "px"; 
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      pos;
+    }
+    
+  }
+}
+
+function myMove5() {
+  let id = null;
+  const elem = document.getElementById("animate2");   
+  let pos = 350;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos ==0) {
+        clearInterval(id);
+        myMove4();
+        
+      
+    }
+    else {
+      pos--; 
+      elem.style.top = pos + "px"; 
+      elem.style.bottom = pos + "px";
+     
+      elem.style.right = pos + "px";
+       
+      clearTimeout(id);
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      
+    }
+    
+  }
+}
+
+
+
+
+
+</script>
+</head>
+<body id="bdy" style="background-color:brown;">
+
+
+<table id="t1" width="935px" height="500px" border="5" bordercolor="yellow">
+<tr>
+
+
+
+<td width="535px" align="center" bgcolor="marrun">
+
+
+
+<div class="flower">
+
+    <div class="mid">
+
+    </div>
+
+    <div class="Petal1 p1">
+
+    </div>
+
+    <div class="Petal1 p2">
+
+    </div>
+
+    <div class="Petal1 p3">
+
+    </div>
+
+    <div class="Petal1 p4">
+
+    </div>
+
+    <div class="Petal2 p1">
+
+    </div>
+
+    <div class="Petal2 p2">
+
+    </div>
+
+    <div class="Petal2 p3">
+
+    </div>
+
+    <div class="Petal2 p4">
+
+    </div>
+
+    <div class="Petal3 p1">
+
+    </div>
+
+    <div class="Petal3 p2">
+
+    </div>
+
+    <div class="Petal3 p3">
+
+    </div>
+
+    <div class="Petal3 p4">
+
+    </div>
+
+
+    <div class="Petal4 p1">
+
+    </div>
+
+    <div class="Petal4 p2">
+
+    </div>
+
+    <div class="Petal4 p3">
+
+    </div>
+
+    <div class="Petal4 p4">
+
+    </div>
+
+    
+
+
+
+
+  </div>
+
+  <!--<img src="a.gif" class="rounded" alt="..."width="20%" height="20%" id="img1">
+
+
+  <img src="a.gif" class="rounded" height="100" weidth="100" id="img" >--> 
+    
+<marquee behavior="alternate" direction="left"><h1 id="h1"><i>May the 12 months of the New Year be full of new attainments for you.<br> May the days be filled with eternal happiness for you and your family .   </i> </h1></marquee>
+
+<marquee behavior="alternate" direction="right"><h1 id="h2" style="color: green;"><i> </i></h1></marquee>
+<marquee behavior="alternate" direction="right"><h1 id="h3" style="color:blue;"></h1></marquee>
+<marquee behavior="alternate" direction="right"><h1 id="h4" style="color: #d1b61c;"></h1></marquee>
+<!--<marquee behavior="alternate" direction="right"><h1 id="h6" style="color: #ee2409;"></h1></marquee>-->
+</td>
+
+<td width="200px" align="center" bgcolor="marrun" >
+  
+  <div id ="container">
+    <div id ="animate"><marquee behavior="alternate" class="a"><br >Dipesh<br > Kumar<br><b id="s">☺</b></marquee></div>
+    <div id ="animate1"><marquee behavior="alternate" class="a"><br >Dipesh<br > Kumar<br><b id="s">☺</b></marquee></div>
+    <div id ="animate2"><marquee behavior="alternate" class="a"><br >Dipesh<br > Kumar<br><b id="s">☺</b></marquee></div>
+  </div>
+
+  <!--<div class="col-sm-4 col-sm-offset-4">
+    <audio controls style="width: 600px;">
+      <source id="l" src="RadioM0002.m4a">
+    </audio>
+  </div> -->
+    
+  
+</td>
+
+
+
+<td  width="200px" align="center" bgcolor="marrun">
+  <div class="cs ta" style="color: red;" data-clipboard-text="_____________________________________¶¶___________
+  ________________________________¶1¶1111111¶_______
+  ________¶¶111¶_______________¶¶¶¶111111111¶¶¶1____
+  _____¶1¶¶¶¶¶111111¶_________¶¶¶1¶¶¶11111111¶1¶¶___
+  ___¶¶¶1¶1111111111¶¶1______¶¶1¶¶¶1111111111111¶¶¶_
+  __¶¶1¶¶1111111111111¶¶_____¶¶¶1¶¶¶¶1111111111111¶_
+  __¶¶_¶1111111111111111¶¶___¶¶¶¶¶¶11¶111111111111¶_
+  _11_¶11111111111111111¶¶_____¶¶¶¶__¶111111111111¶¶
+  ¶¶¶¶1111111111111111¶¶¶¶_____1¶¶__11111111111111¶¶
+  ¶¶¶¶11111111111¶¶¶¶¶¶¶______1¶1¶¶11111111111111¶1_
+  ¶¶1¶1111111111111¶¶¶¶¶¶_____¶¶¶¶¶¶1111111111111¶¶_
+  ¶¶11111111111111111111111¶¶___¶¶¶¶¶¶1111111111¶¶¶_
+  _1¶111111111111111111¶¶¶¶¶¶____¶¶¶¶11111111111¶1__
+  __¶¶11111111111111111¶¶¶_____¶¶¶1111111111111¶1___
+  ___¶¶¶111111111111¶1¶¶¶____1¶¶111¶1111111¶11¶1____
+  ____1¶¶¶11111111111¶¶¶¶111¶¶¶¶111111111¶11¶¶¶_____
+  ______¶¶¶¶1111111111111¶¶¶¶1¶¶¶¶¶¶¶¶11¶11¶¶_______
+  _______¶¶¶¶¶11111111111¶111¶___¶¶¶111¶1¶¶¶________
+  _________¶¶¶¶¶¶111111111111¶__¶¶¶111¶¶¶1__________
+  ____________1¶¶¶¶¶11111111¶¶_¶¶¶¶111¶¶____________
+  ______________¶¶¶¶¶¶¶1111111_¶¶¶11¶¶1_____________
+  _________________1¶¶¶¶¶¶1111¶¶¶1¶¶¶¶______________
+  ____________________¶¶¶¶¶¶1¶¶¶¶¶1¶________________
+  _______________________¶1¶¶¶1¶¶¶__________________
+  ___________________________11¶____________________
+  ">
+  <pre>_____________________________________¶¶___________
+  ________________________________¶1¶1111111¶_______
+  ________¶¶111¶_______________¶¶¶¶111111111¶¶¶1____
+  _____¶1¶¶¶¶¶111111¶_________¶¶¶1¶¶¶11111111¶1¶¶___
+  ___¶¶¶1¶1111111111¶¶1______¶¶1¶¶¶1111111111111¶¶¶_
+  __¶¶1¶¶1111111111111¶¶_____¶¶¶1¶¶¶¶1111111111111¶_
+  __¶¶_¶1111111111111111¶¶___¶¶¶¶¶¶11¶111111111111¶_
+  _11_¶11111111111111111¶¶_____¶¶¶¶__¶111111111111¶¶
+  ¶¶¶¶1111111111111111¶¶¶¶_____1¶¶__11111111111111¶¶
+  ¶¶¶¶11111111111¶¶¶¶¶¶¶______1¶1¶¶11111111111111¶1_
+  ¶¶1¶1111111111111¶¶¶¶¶¶_____¶¶¶¶¶¶1111111111111¶¶_
+  ¶¶11111111111111111111111¶¶___¶¶¶¶¶¶1111111111¶¶¶_
+  _1¶111111111111111111¶¶¶¶¶¶____¶¶¶¶11111111111¶1__
+  __¶¶11111111111111111¶¶¶_____¶¶¶1111111111111¶1___
+  ___¶¶¶111111111111¶1¶¶¶____1¶¶111¶1111111¶11¶1____
+  ____1¶¶¶11111111111¶¶¶¶111¶¶¶¶111111111¶11¶¶¶_____
+  ______¶¶¶¶1111111111111¶¶¶¶1¶¶¶¶¶¶¶¶11¶11¶¶_______
+  _______¶¶¶¶¶11111111111¶111¶___¶¶¶111¶1¶¶¶________
+  _________¶¶¶¶¶¶111111111111¶__¶¶¶111¶¶¶1__________
+  ____________1¶¶¶¶¶11111111¶¶_¶¶¶¶111¶¶____________
+  ______________¶¶¶¶¶¶¶1111111_¶¶¶11¶¶1_____________
+  _________________1¶¶¶¶¶¶1111¶¶¶1¶¶¶¶______________
+  ____________________¶¶¶¶¶¶1¶¶¶¶¶1¶________________
+  _______________________¶1¶¶¶1¶¶¶__________________
+  ___________________________11¶____________________
+  </pre>
+  </div>
+  <marquee behavior="alternate" direction="left"><h1 id="h11"><i>* I LOVE YOU *  </i> </h1></marquee>
+  <marquee behavior="alternate" direction="right"><h1 id="h6" style="color: hsl(54, 93%, 48%);"></h1></marquee>
+  
+  
+</td>
+
+
+
+
+
+
+</tr>
+
+
+
+
+
+
+<tr bgcolor="pink" height="150">
+<td colspan="3">
+<div id="d1">
+<button class="button" onclick="changeColor('red')" >Red</button>
+<button class="button button2" onclick="changeColor('green')" >Green</button>
+<button class="button button3" onclick="changeColor('blue')" >Blue</button>
+<button class="button button4" onclick="changeColor('cyan')" >Cyan</button>
+<button class="button button5" onclick="changeColor('orange')" >Orange</button>
+<button class="button button6" onclick="changeColor('slateblue')" >Slateblue</button>
+<button  class="button button8" id="f4" onclick="f4()"  ><a href="mdec.html">Stop</a></button>
+<button  class="button button9" id="f5" onclick="myMove()"  >Animation</button>
+
+ 
+  <b onclick="myMove1()"></b> 
+  
+<!--<button class="button button6" id="f6" onclick="f8()" >show</button>-->
+
+
+</div>
+</td>
+
+
+
+
+
+
+
+
+
+
+
+</tr>
+
+  
+    
+  
+
+</table>
+</body>
+</html>
